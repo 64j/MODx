@@ -666,189 +666,58 @@ $mutate_content_fields = array();
 //print_r($mutate_content_fields);
 //if(!$mutate_content_fields) {
 $mutate_content_fields = array(
-  'General' => array(
-    'title' => $_lang['settings_general'],
-    'fields' => array(
-      'pagetitle' => array(
-        'field' => array(
-          'title' => $_lang['resource_title'],
-          'help' => $_lang['resource_title_help']
-        )
-      ),
-      'longtitle' => array(
-        'field' => array(
-          'title' => $_lang['long_title'],
-          'help' => $_lang['resource_long_title_help']
-        )
-      ),
-      'description' => array(
-        'field' => array(
-          'title' => $_lang['resource_description'],
-          'help' => $_lang['resource_description_help']
-        )
-      ),
-      'alias' => array(
-        'field' => array(
-          'title' => addslashes($_lang['resource_alias']),
-          'help' => addslashes($_lang['resource_alias_help'])
-        )
-      ),
-      'link_attributes' => array(
-        'field' => array(
-          'title' => addslashes($_lang['link_attributes']),
-          'help' => addslashes($_lang['link_attributes_help'])
-        )
-      ),
-      'weblink' => array(
-        'field' => array(
-          'title' => $_lang['weblink'],
-          'help' => $_lang['resource_weblink_help']
-        )
-      ),
-      'introtext' => array(
-        'field' => array(
-          'title' => $_lang['resource_summary'],
-          'help' => $_lang['resource_summary_help']
-        )
-      ),
-      'template' => array(
-        'field' => array(
-          'title' => $_lang['page_data_template'],
-          'help' => $_lang['page_data_template_help']
-        )
-      ),
-      'menutitle' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_menu_title'],
-          'help' => $_lang['resource_opt_menu_title_help']
-        )
-      ),
-      'menuindex' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_menu_index']
-        )
-      ),
-      'parent' => array(
-        'field' => array(
-          'title' => $_lang['resource_parent'],
-          'help' => $_lang['resource_parent_help']
-        )
-      )
-    ),
-    'roles' => ''
-  ),
-  'Settings' => array(
-    'title' => $_lang['settings_page_settings'],
-    'fields' => array(
-      'published' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_published'],
-          'help' => $_lang['resource_opt_published_help']
-        )
-      ),
-      'pub_date' => array(
-        'field' => array(
-          'title' => $_lang['page_data_publishdate'],
-          'help' => $_lang['page_data_publishdate_help']
-        )
-      ),
-      'unpub_date' => array(
-        'field' => array(
-          'title' => $_lang['page_data_unpublishdate'],
-          'help' => $_lang['page_data_unpublishdate_help']
-        )
-      ),
-      'type' => array(
-        'field' => array(
-          'title' => $_lang['resource_type'],
-          'help' => $_lang['resource_type_message']
-        )
-      ),
-      'contentType' => array(
-        'field' => array(
-          'title' => $_lang['page_data_contentType'],
-          'help' => $_lang['page_data_contentType_help']
-        )
-      ),
-      'content_dispo' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_contentdispo'],
-          'help' => $_lang['page_data_contentType_help']
-        )
-      ),
-      'alias_visible' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_alvisibled'],
-          'help' => addslashes($_lang['resource_opt_contentdispo_help'])
-        )
-      ),
-      'isfolder' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_folder'],
-          'help' => $_lang['resource_opt_folder_help']
-        )
-      ),
-      'richtext' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_richtext'],
-          'help' => $_lang['resource_opt_richtext_help']
-        )
-      ),
-      'donthit' => array(
-        'field' => array(
-          'title' => $_lang['track_visitors_title'],
-          'help' => $_lang['resource_opt_trackvisit_help']
-        )
-      ),
-      'searchable' => array(
-        'field' => array(
-          'title' => $_lang['page_data_searchable'],
-          'help' => $_lang['page_data_searchable_help']
-        )
-      ),
-      'cacheable' => array(
-        'field' => array(
-          'title' => $_lang['page_data_cacheable'],
-          'help' => $_lang['page_data_cacheable_help']
-        )
-      ),
-      'syncsite' => array(
-        'field' => array(
-          'title' => $_lang['resource_opt_emptycache'],
-          'help' => $_lang['resource_opt_emptycache_help']
-        )
-      )
-    ),
-    'roles' => ''
-  ),
-  'Custom' => array(
-    'title' => 'Кастом',
-    'fields' => array(
-      'tv3' => array(
-        'tv' => array()
-      ),
-      'tv4' => array(
-        'tv' => array()
-      ),
-      'tv1' => array(
-        'tv' => array()
-      ),
-      'tv7' => array(
-        'tv' => array()
-      )
-    )
-  ),
-  'content' => array(
-    'title' => 'Подробное описание',
-    'fields' => array(
-      'content' => array(
-        'field' => array(
-          'title' => $_lang['which_editor_title']
-        )
-      )
-    ),
-    'roles' => ''
-  )
+		'General' => array(
+				'title' => $_lang['settings_general'],
+				'fields' => array(
+						'pagetitle' => array('field' => array('title' => $_lang['resource_title'], 'help' => $_lang['resource_title_help'])),
+						'longtitle' => array('field' => array('title' => $_lang['long_title'], 'help' => $_lang['resource_long_title_help'])),
+						'description' => array('field' => array('title' => $_lang['resource_description'], 'help' => $_lang['resource_description_help'])),
+						'alias' => array('field' => array('title' => addslashes($_lang['resource_alias']), 'help' => addslashes($_lang['resource_alias_help']))),
+						'link_attributes' => array('field' => array('title' => addslashes($_lang['link_attributes']), 'help' => addslashes($_lang['link_attributes_help']))),
+						'weblink' => array('field' => array('title' => $_lang['weblink'], 'help' => $_lang['resource_weblink_help'])),
+						'introtext' => array('field' => array('title' => $_lang['resource_summary'], 'help' => $_lang['resource_summary_help'])),
+						'template' => array('field' => array('title' => $_lang['page_data_template'], 'help' => $_lang['page_data_template_help'])),
+						'menutitle' => array('field' => array('title' => $_lang['resource_opt_menu_title'], 'help' => $_lang['resource_opt_menu_title_help'])),
+						'menuindex' => array('field' => array('title' => $_lang['resource_opt_menu_index'])),
+						'parent' => array('field' => array('title' => $_lang['resource_parent'], 'help' => $_lang['resource_parent_help']))
+				),
+				'roles' => ''		
+		),
+		'Settings' => array(
+		    'title' => $_lang['settings_page_settings'],
+				'fields' => array(
+				    'published' => array('field' => array('title' => $_lang['resource_opt_published'], 'help' => $_lang['resource_opt_published_help'])),
+						'pub_date' => array('field' => array('title' => $_lang['page_data_publishdate'], 'help' => $_lang['page_data_publishdate_help'])),
+						'unpub_date' => array('field' => array('title' => $_lang['page_data_unpublishdate'], 'help' => $_lang['page_data_unpublishdate_help'])),
+						'type' => array('field' => array('title' => $_lang['resource_type'], 'help' => $_lang['resource_type_message'])),
+						'contentType' => array('field' => array('title' => $_lang['page_data_contentType'], 'help' => $_lang['page_data_contentType_help'])),
+						'content_dispo' => array('field' => array('title' => $_lang['resource_opt_contentdispo'], 'help' => $_lang['page_data_contentType_help'])),
+						'alias_visible' => array('field' => array('title' => $_lang['resource_opt_alvisibled'], 'help' => addslashes($_lang['resource_opt_contentdispo_help']))),
+						'isfolder' => array('field' => array('title' => $_lang['resource_opt_folder'], 'help' => $_lang['resource_opt_folder_help'])),
+						'richtext' => array('field' => array('title' => $_lang['resource_opt_richtext'], 'help' => $_lang['resource_opt_richtext_help'])),
+						'donthit' => array('field' => array('title' => $_lang['track_visitors_title'], 'help' => $_lang['resource_opt_trackvisit_help'])),
+						'searchable' => array('field' => array('title' => $_lang['page_data_searchable'], 'help' => $_lang['page_data_searchable_help'])),
+						'cacheable' => array('field' => array('title' => $_lang['page_data_cacheable'], 'help' => $_lang['page_data_cacheable_help'])),
+						'syncsite' => array('field' => array('title' => $_lang['resource_opt_emptycache'], 'help' => $_lang['resource_opt_emptycache_help']))
+				),
+				'roles' => ''
+		),
+		'Custom' => array(
+				'title' => 'Кастом',
+				'fields' => array(
+						'tv3' => array('tv' => array()),
+						'tv4' => array('tv' => array()),
+						'tv1' => array('tv' => array()),
+						'tv7' => array('tv' => array())
+				)
+		),
+		'content' => array(
+				'title' => 'Подробное описание',
+				'fields' => array(
+						'content' => array('field' => array('title' => $_lang['which_editor_title']))
+				),
+				'roles' => ''
+		)
 );
 //}
 
