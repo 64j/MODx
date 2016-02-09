@@ -1,9 +1,4 @@
-давно уже думал как спрятать всё лишнее, от кривых рук горе менеджеров))<br />
-и пошёл другим путём, изменил вывод верхнего меню в файле шаблона по умолчанию в сборке Дмитрия.
-
-листинг файла <strong>/manager/media/style/D3X/framesmainmenu.php</strong> ниже.
-
-<code><?php
+<?php
 /*
 menu->Build('id','parent','name','link','alt','onclick','permission','target','divider 1/0','menuindex', 'class')
 */
@@ -143,5 +138,3 @@ if (is_array($menu)) $sitemenu = $menu;
 include_once(MODX_MANAGER_PATH.'includes/menu.class.inc.php');
 $menu = new EVOmenu();
 $menu->Build($sitemenu);
-
-?></code>
